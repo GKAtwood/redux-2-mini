@@ -1,6 +1,6 @@
 import {createStore, applyMiddleware} from 'redux';
 import promiseMiddleware from 'redux-promise-middleware';
-import hackerNewsreducer from './ducks/hackerNewsreducer';
+import hackerNewsreducer from './ducks/hackerNewsReducer';
 import mediumReducer from './ducks/mediumReducer';
 import {combineReducers} from 'redux';
 
