@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Card from './../shared/Card/Card';
 import Loading from './../shared/Loading/Loading';
+import {requestArticles} from '../../ducks/hackerNewsreducer';
+import {connect} from 'react-redux';
+
 
 class HackerNews extends Component {
   constructor(props) {
@@ -19,7 +22,7 @@ class HackerNews extends Component {
   }
 }
 
-export default HackerNews;
+export default connect()(HackerNews);
 
 
 const styles = {
